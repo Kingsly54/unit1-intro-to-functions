@@ -2,6 +2,7 @@ import turtle
 from turtle import *
 t = Turtle()
 t.shape('turtle')
+t.speed(0)
 """ t.forward(200)
 def square(x):
     for i in range(4):
@@ -31,49 +32,68 @@ right() """
         t.left(90) 
 rectangle(100)        
  """
-""" 
 
-sidelength=100
-rotate=90
 def square(x,y):
     for i in range(4):
         t.forward(x)
         t.left(y)  
-square(100,90)
+def squareright5 (iRange):
+    length=100
+    for i in range(iRange):
+        square(100,90)
+        t.right(5)
+        
+
+squareright5(60)
+ 
+'''def square(x,y):
+    for i in range(4):
+        t.forward(x)
+        t.left(y)  
 def doublesquares(iRange):
     length=25
     for i in range(iRange):
         square(length,90)
         length=length*2
-doublesquares(5) """
-""" sidelength=100
-rotate=90
-def square(x,y):
+doublesquares(5) '''
+
+
+'''def square(x,y):
     for i in range(4):
         t.forward(x)
         t.left(y)  
-square(100,90)
 def addsquares(iRange):
     length=25
     for i in range(iRange):
         square(length,90)
         length+=25
-addsquares(5) """
-sidelength=5
-rotate=90
-def square(x,y):
+addsquares(5) '''
+'''def square(x,y):
     for i in range(4):
         t.forward(x)
         t.left(y)  
-square(5,90)
 def squares (iRange):
     length=5
     for i in range(iRange):
-        square(length,5)
+        square(length,90)
+        t.right(5)
         length+=5
 
-squares(10)
+squares(60) '''
+'''
+def star(x,y):
+    for i in range(5):
+        t.forward(x)
+        t.left(y)  
+def stars (iRange):
+    length=5
+    for i in range(iRange):
+        star(length,144)
+        t.right(5)
+        length+=5
 
+stars(65)
+'''
 
 
 
